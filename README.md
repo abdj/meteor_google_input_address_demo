@@ -1,7 +1,7 @@
 # autoform-google-places-input demo
 
 A simple demo app for https://github.com/abdj/autoform-google-places-input package.
-See https://github.com/abdj/autoform-google-places-input package
+
 
 ## Todo
  * Documentation
