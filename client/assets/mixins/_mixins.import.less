@@ -1,0 +1,105 @@
+/**
+ * Create a circle
+ */
+.circle (@size: 40px, @radius: 50px) {
+	display: block;
+	width: @size;
+	height: @size;
+	line-height: @size;
+	
+	.border-top-radius(@radius);
+	.border-left-radius(@radius);
+	.border-bottom-radius(@radius);
+	.border-right-radius(@radius);
+}
+
+
+/**
+ * Create a line before and after text
+ * Sample :
+ * -------- text ----------
+ */
+.lineonsides ( @linecolor: @color-gray, @margintopbottom: 2rem ) {
+	& {
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		margin-top: @margintopbottom;
+		padding: 0;
+	}
+	
+	& span {
+		display: inline-block;
+		vertical-align: baseline;
+		zoom: 1;
+		*display: inline;
+		*vertical-align: auto;
+		position: relative;
+		padding: 0 20px;
+	}
+	
+	& span:before, & span:after {
+		content: '';
+		display: block;
+		width: 1000px;
+		position: absolute;
+		top: 50%;
+		border-top: 1px solid @linecolor;
+	}
+	
+	& span:before {
+		right: 100%;
+	}
+	
+	& span:after {
+		left: 100%;
+	}
+}
+
+
+/**
+ * Create a simple line
+ * Sample :
+ * ----------------------
+ */
+.line ( @linecolor: #fff, @margintopbottom: 2rem ) {
+	& {
+		display: block;
+		margin: @margintopbottom 0;
+		padding: 0;
+	}
+
+	& span {
+		display: block;
+		font-size: 0;
+		height: 2rem;
+		line-height: 1rem;
+		
+		border-bottom: 1px solid @linecolor;
+	}
+}
+
+.vertical-align () {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.placeholderduke (@color: #fff) {
+	&::-moz-placeholder           { color: @color !important; } // Firefox
+	&:-ms-input-placeholder       { color: @color !important; } // Internet Explorer 10+
+	&::-webkit-input-placeholder  { color: @color !important; } // Safari and Chrome
+}
+
+/**
+ * Mixins for cols fixed with floating part
+ */
+.makemefixed ( @col-dimension : 100px ) {
+	.group-float {
+		.pull-left();
+		width: ~"calc(100% - @{col-dimension})";
+	}
+	.group-fixed {
+		.pull-right();
+		width: @col-dimension;
+	}
+}

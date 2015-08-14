@@ -1,0 +1,66 @@
+body .btn{
+	border: none;
+	border-radius:0;
+	font-weight: 200;
+}
+
+.btn:hover{
+	background: @color-green-hover;
+}
+body .btn-primary:hover,
+body .btn-primary:focus,
+body .btn-primary.focus,
+body .btn-primary:active{
+	background-color: @color-green-hover;
+	border-color: @color-green-hover;
+}
+
+
+.btn-red{
+	background: @color-red;
+}
+
+.btn-red:hover{
+	background: @color-red-hover;
+}
+
+.btn-gray{
+	color: #fff;
+	background: @color-gray;
+	border: 1px solid #fff;
+}
+.btn-gray:hover{
+	color: @color-gray;
+	background: @color-gray-light;
+	border: 1px solid #fff;
+}
+
+.btn.btn-addon {
+	background: none repeat scroll 0 0 #fff;
+	border-radius: 0;
+	color: @color-gray;
+	font-size: 14px;
+	font-weight: 500;
+	display: block;
+	&:hover{
+		color: @color-green;
+	}
+}
+
+.btn.btn-lg-x{
+	border: 0;
+	padding-left: 35px;
+	padding-right: 35px;
+	font-weight: 300;
+	font-size: 21px;
+}
+
+.file-upload .btn-default{
+	background: @color-gray;
+	color: #fff;
+}
+@media(max-width:480px) {
+	.btn{
+		font-weight: 400;
+	}
+}

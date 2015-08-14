@@ -1,0 +1,219 @@
+.assetcompanyuser () {	
+	article.company,
+	article.asset,
+	article.add-bloc {
+		margin-bottom: 30px;
+		max-width: 100% !important;
+		position: relative;
+		
+	}
+	.add-bloc{
+		padding: 100px 0 100px 0;
+		background: url(../img/stri.png) repeat;
+		.entry-summary{
+			padding: 0 45px 0 45px;
+			text-align: center;
+			p{
+				text-align: center;
+				font-size: 19px;
+				line-height: 27px;
+				color: #000;
+			}
+		}
+	}
+	article.bloc-promote{
+		&:hover{
+			.ispromote{
+				height: 24px;
+				span.text{
+				padding: 4px 0;
+				opacity: 1;
+			}
+			}
+		}
+	}
+	.bloctheassets {
+		cursor: pointer;
+		background: #fff;
+		box-shadow: 0 1px 2px #ccc;
+		font-size: 12px;
+		font-weight: 300;
+		header {
+			padding: 12px;
+			.picture{
+				margin-right: 12px;
+				width: 60px;
+				height: 60px;
+				display: block;
+				img {
+					width: 60px;
+					height: 60px;
+					padding: 0;
+					display: block;
+				}
+				
+			}
+			.no-image{
+				background: @color-gray-mid;
+				width: 60px;
+				height: 60px;
+				display: block;
+				i{
+					padding-top: 14px;
+					display: block;
+					text-align: center;
+				
+					color: #fff;
+					font-size: 31px;
+					line-height: 31px;
+				}
+			}
+			span.entry-title{
+				display: block;
+				margin-top: .6em;
+				padding: 0;
+				color: @color-black;
+				font-size: 19px;
+				font-weight: 600;
+			}
+			small.location{
+				color: @color-black;
+			}
+			h2, h3 {
+				margin: 0;
+				margin-top: .6em;
+				padding: 0;
+				color: @color-black;
+				font-size: 19px;
+				font-weight: 600;
+				a {
+					color: @color-black;
+					word-wrap: break-word;
+				}
+			}
+			a:hover{
+			 text-decoration: none;
+			}
+		}
+		.entry-banner {
+			img{
+				max-height: 200px;
+			}
+			.no-image{
+				background: @color-gray-mid;
+				height: 103px;
+				display: block;
+				i{
+					padding-top: 36px;
+					display: block;
+					text-align: center;
+				
+					color: #fff;
+					font-size: 31px;
+					line-height: 31px;
+				}
+			}
+			ul {
+				.list-unstyled();
+				margin: 0;
+				> li {
+					background: @color-gray;
+					padding: 10px;
+					color: @color-black;
+					background: @color-gray-extralight;
+					border-top: 1px solid @color-gray-light;
+					border-bottom: 1px solid @color-gray-light;
+					font-size: 12px;
+					font-weight: 600;
+					span.market{
+						width: 50%;
+						.pull-left();
+
+
+					}
+					small {
+						.pull-right();
+						color: @color-black;
+						font-size: 12px;
+						font-weight: 300;
+					}
+					a{
+						color: @color-gray;
+						&:hover{
+							color: @color-green;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}		  
+		.entry-summary {
+			padding: 11px;
+			max-width: 100% !important;
+			white-space: normal;
+			word-wrap: break-word;
+			font-size: 14px;
+			p{			    
+				color: #000;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+		}
+		.entry-buttons {
+			border-top: 1px solid @color-gray-light;
+			.btn-favorite{
+				i{
+					margin-right: 5px;
+				}
+			}
+			.btn-message{
+				.btn{
+					width: 100%;
+					text-align: center;
+					display: block;
+				}
+			}
+		}
+	}
+}
+.entry-kpis{
+	.list-keys {
+		margin-bottom: 0;		
+		li{
+			
+			background: pink;
+			position: relative;
+			padding: 13px;
+			padding-left: 3em;
+			font-size: 19px;
+			font-weight: 300;
+			line-height: 1em;
+			color: @color-gray;
+			background: @color-gray-extralight;
+			border-top: 1px solid @color-gray-light;
+			
+			small {
+				display: block;
+				font-size: 12px;
+			}
+			
+			.icon {
+				position: absolute;
+				top: 18px;
+				left: 13px;
+				font-size: 30px;
+				
+				&.icon-green {
+					color: @color-green;
+				}
+			}
+			
+			&:first-child {
+				.icon {
+					color: @color-green;
+				}
+			}
+		}
+	}
+}
+.assetcompanyuser ();

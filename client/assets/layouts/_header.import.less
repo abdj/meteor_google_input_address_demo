@@ -1,0 +1,248 @@
+
+.mm-menu{
+	display: none;
+}
+nav#myoffcanvas{
+	display: none;
+}
+nav#myoffcanvas.mm-current{
+	display: block;
+}
+
+#mm-menu-base{
+	> .mm-panel{
+		padding-top: 0;
+	}
+	.name-user{
+		margin-left: -20px;
+		margin-right: -20px;
+		a i.icon{
+			margin-right: 5px;
+		}
+	}
+	.name-user a{
+		border-bottom: 1px solid #8c8c8c;
+		font-weight: 200;
+		font-size: 19px;
+		line-height: 19px;
+		color: #fff;
+		padding: 15px 15px 15px 30px;
+		display: block;
+		font-weight: 100;
+	}
+	.mm-list{
+		padding: 5px 0;
+		border-bottom: 1px solid #8c8c8c;
+		> li a{
+			border-bottom: none;
+			font-weight: 100;
+		}
+	}
+	.explain{
+		padding: 20px 15px;
+		font-size: 19px;
+		a{
+			color: #fff;
+			font-weight: 300;
+		}
+	}
+}
+
+#masthead{
+	margin-bottom: 0;
+	border: 0;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #eeeeee;
+	overflow: hidden;
+	z-index: 1000;
+	background: #fff;
+	
+
+	.blur-c{
+		position: absolute;
+		width: 150%;
+		height: 150%;
+		 top:-10px;
+		 left: -10px;
+		overflow:hidden;
+		top:-10px;
+		left: -10px;
+		background:rgba(0,0,0,.2);
+		   filter: blur(10px); 
+			-webkit-filter: blur(10px); 
+			-moz-filter: blur(10px);
+			-o-filter: blur(10px);
+			-ms-filter: blur(10px);
+			filter: url(#blur);
+			z-index: -1;
+			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+		display: none;
+
+	}
+
+	.navbar-brand {
+		margin: 0;
+		font-weight: 300;
+		padding: 0;
+		height: inherit;
+		line-height: 25px;
+		span{
+			margin-left: 10px;
+		}
+	}
+	.navbar-form {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-shadow: none;
+	
+		input[type=search] {
+			color: #000;
+			height: 50px !important;
+			border-top: 0;
+			border-bottom: 0;
+			font-weight: 200;
+			border-color: @color-gray-light;
+			background: @color-gray-extralight;
+			box-shadow: none;
+			transition:width .12s;
+			transition-timing-function: ease;
+			width: 150px;
+			&:focus {
+				box-shadow: none;
+				border: 1px solid @color-green;
+				width: 300px;
+			}
+			
+		}
+		placeholder{
+			color: @color-gray-light;
+		}
+		.btn.btn-lg {
+			color: @color-green !important;
+			height: 50px !important;
+			border-right: 1px solid @color-gray-light;
+			padding-left: 10px;
+			padding-right: 10px;
+			
+		}
+	}
+
+	a{
+		display: block;
+		color: @color-gray;
+		padding: 11px 15px;
+		text-decoration: none;
+		font-size: 19px;
+		i {
+			color: @color-green;
+		}
+	}
+	a:hover{
+		color: @color-green;
+		i {
+			color: @color-green;
+		}
+	}
+	.navbar-text {
+		float: right !important;
+		margin: 0;
+		font-weight: 200;
+		a{
+			float: right;
+			color: @color-gray;
+			margin-right: 0;
+			i {
+				color: @color-green;
+			}
+		}
+		a.active{
+			background: url(/img/stri.png) repeat;
+		}
+		a:hover{
+			color: @color-green;
+			i {
+				color: @color-green;
+			}
+		}
+		a.navbar-logged{
+			i{
+				font-size: 27px;
+			}
+		}
+		.circle{
+			.circle(35px);
+		}
+		
+	}
+	.navbar-link.avatar{
+			padding: 7px 10px 7px 7px;
+	}
+}
+
+
+.logged-in  a.navbar-link-login{
+	padding: 10px 12px;
+	display: block;	
+}
+
+body.home #masthead,
+body.typology #masthead{
+	background: none;
+	border-bottom: 1px solid #adadad;
+	.blur-c{
+		display: block;
+	}
+	a{
+		color: #fff;
+	}
+}
+@media(max-width:767px) {
+	.banner.navbar {
+		.navbar-form {
+			width: 100px;
+			padding-left:0;
+			padding-right:0;
+			input[type=search] {
+				width: 100px;
+				&:focus {
+					width: 200px;
+				}
+			}
+		}
+	}
+}
+@media(min-width:768px) {
+	.navbar .navbar-form {
+		width: 250px;
+	}
+	.navbar-text {
+		margin-right: 0;
+	}
+}
+
+@media(max-width:480px) {
+	.navbar-text{
+		margin: 0;
+	}
+	.banner.navbar {
+		.navbar-form {
+			input[type=search] {
+				width: 100px;
+				&:focus {
+					width: 170px;
+				}
+			}
+		}
+	}
+
+}
+
+
