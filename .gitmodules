@@ -1,0 +1,3 @@
+[submodule "packages/autoform-google-places-input"]
+	path = packages/autoform-google-places-input
+	url = https://github.com/abdj/autoform-google-places-input.git
