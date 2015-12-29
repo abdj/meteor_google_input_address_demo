@@ -5,13 +5,17 @@ App.info({
   version: '0.0.1'
 });
 
-App.icons({
-  'iphone': 'public/resources/icons/icon-60.png',
-  'iphone_2x': 'public/resources/icons/icon-60@2x.png'
-});
+App.accessRule('*.google.com/*');
+App.accessRule('*.googleapis.com/*');
+App.accessRule('*.gstatic.com/*');
 
-App.launchScreens({
-  'iphone': 'public/resources/splash/Default~iphone.png',
-  'iphone_2x': 'public/resources/splash/Default@2x~iphone.png',
-  'iphone5': 'public/resources/splash/Default-568h@2x~iphone.png'
-});
+// App.icons({
+//   'iphone': 'public/resources/icons/icon-60.png',
+//   'iphone_2x': 'public/resources/icons/icon-60@2x.png'
+// });
+
+// App.launchScreens({
+//   'iphone': 'public/resources/splash/Default~iphone.png',
+//   'iphone_2x': 'public/resources/splash/Default@2x~iphone.png',
+//   'iphone5': 'public/resources/splash/Default-568h@2x~iphone.png'
+// });
